@@ -1,3 +1,5 @@
-build:
-  settings:
-    board_root: .
+name: zmk-keyboard-cornev5
+
+boards:
+  - cornev5_left
+  - cornev5_right
