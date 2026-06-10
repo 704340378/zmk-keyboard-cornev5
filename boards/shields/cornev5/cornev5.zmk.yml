@@ -1,0 +1,12 @@
+file_format: "1"
+id: cornev5
+name: Cornev5
+type: board
+url: 
+features:
+  - keys
+  - encoder
+  # - led
+siblings:
+  - cornev5_left
+  - cornev5_right

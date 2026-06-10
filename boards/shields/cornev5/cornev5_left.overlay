@@ -1,0 +1,8 @@
+/ {
+  model = "Corne v5 Left";
+  compatible = "corne,cornev5-left", "nordic,nrf52840-qiaa";
+};
+
+&gpio {
+  status = "okay";
+};
