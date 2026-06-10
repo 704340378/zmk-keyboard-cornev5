@@ -32,8 +32,5 @@ include:
 
 
 
-  - board: cornix_right
-    # shield: cornix_indicator
-    # artifact-name: cornix_right_nosd
 
   
