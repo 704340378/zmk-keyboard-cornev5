@@ -1,0 +1,68 @@
+# cornix board configuration (renamed to cornev5)
+
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+## Main device (left side)
+if BOARD_CORNEV5_LEFT
+
+config ZMK_KEYBOARD_NAME
+	default "Cornev5"
+
+if USB
+config USB_NRFX
+    default y
+
+config USB_DEVICE_STACK
+    default y
+endif # USB
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+
+config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
+	default y
+
+config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY
+	default y
+
+endif # BOARD_CORNEV5_LEFT
+
+## Peripheral device (right side)
+if BOARD_CORNEV5_RIGHT 
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default n
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default n
+
+# Add keyboard debouncing
+config ZMK_KSCAN_DEBOUNCE_PRESS_MS
+    default 3
+config ZMK_KSCAN_DEBOUNCE_RELEASE_MS
+    default 3
+
+endif # BOARD_CORNEV5_RIGHT
+
+# Common options for both sides
+if BOARD_CORNEV5_LEFT || BOARD_CORNEV5_RIGHT
+
+config BOARD
+	default "cornev5_left" if BOARD_CORNEV5_LEFT
+	default "cornev5_right" if BOARD_CORNEV5_RIGHT
+
+config SOC_NRF52840_QIAA
+	default y
+
+config ZMK_SPLIT
+	default y
+
+config ZMK_BLE
+	default y
+
+endif # BOARD_CORNEV5_LEFT || BOARD_CORNEV5_RIGHT
+# vim: set ft=kconfig:
