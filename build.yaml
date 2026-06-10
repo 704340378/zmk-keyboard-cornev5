@@ -17,4 +17,9 @@
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
 #     artifact-name: corne_left_with_studio
 #
----
+  include:
+  - board: cornev5_left
+    shield: cornev5_left
+
+  - board: cornev5_right
+    shield: cornev5_right
