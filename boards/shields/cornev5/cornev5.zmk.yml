@@ -1,12 +1,12 @@
 file_format: "1"
 id: cornev5
-name: Cornev5
-type: board
-url: 
+name: Corne v5
+type: shield
+requires: [nice_nano]
 features:
   - keys
-  - encoder
-  # - led
+  - studio
 siblings:
   - cornev5_left
   - cornev5_right
+
