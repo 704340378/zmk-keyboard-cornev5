@@ -14,9 +14,9 @@
 ---
 include:
   - board: nice_nano_v2
-    shield:cornev5_left
-   - board: nice_nano_v2
-     shield: cornev5_right
+    shield: cornev5_left
+  - board: nice_nano_v2
+    shield: cornev5_right
 
 
 
