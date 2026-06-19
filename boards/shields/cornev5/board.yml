@@ -1,7 +1,0 @@
-boards:
-  - name: cornev5_left
-    socs:
-      - name: nrf52840
-  - name: cornev5_right
-    socs:
-      - name: nrf52840
