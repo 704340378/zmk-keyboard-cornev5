@@ -1,0 +1,12 @@
+file_format: "1"
+id: cornev5
+name: Corne v5
+type: shield
+requires: [nice_nano]
+features:
+  - keys
+  - studio
+siblings:
+  - cornev5_left
+  - cornev5_right
+

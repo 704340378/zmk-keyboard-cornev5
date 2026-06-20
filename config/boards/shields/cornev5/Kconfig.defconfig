@@ -1,0 +1,17 @@
+if SHIELD_CORNEV5_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Corne Rev5"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_CORNEV5_LEFT || SHIELD_CORNEV5_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
+
