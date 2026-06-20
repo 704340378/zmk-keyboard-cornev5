@@ -1,7 +1,0 @@
-manifest:
-  version: "0.13"
-  self:
-    name: zmk-keyboard-cornev5
-  boards:
-    shields:
-      - cornev5
