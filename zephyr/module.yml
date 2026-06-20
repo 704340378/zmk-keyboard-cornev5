@@ -1,5 +1,5 @@
 name: zmk-keyboard-cornev5
 
-boards:
+shields:
   - cornev5_left
   - cornev5_right
